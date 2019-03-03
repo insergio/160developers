@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    
+    <body>
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/logo.png</argument>
+                <argument name="logo_img_width" xsi:type="number">134</argument>
+                <argument name="logo_img_height" xsi:type="number">72</argument>
+            </arguments>
+        </referenceBlock>
+
+
+        <referenceContainer name="columns.top">
+            <block class="Magento\Framework\View\Element\Template" name="160-header" template="Magento_Cms::html/160-header.phtml" />
+            <block class="Magento\Framework\View\Element\Template" name="160-form1" template="Magento_Cms::html/160-form1.phtml" />
+            <block class="Magento\Framework\View\Element\Template" name="160-form2" template="Magento_Cms::html/160-form2.phtml" />
+            <block class="Magento\Framework\View\Element\Template" name="160-form3" template="Magento_Cms::html/160-form3.phtml" />
+            <block class="Magento\Framework\View\Element\Template" name="160-form4" template="Magento_Cms::html/160-form4.phtml" />
+            <block class="Magento\Framework\View\Element\Template" name="160-footer" template="Magento_Cms::html/160-footer.phtml" />            
+        </referenceContainer>
+
+        <referenceBlock name="nav.toggle" remove="true"/>
+        <referenceBlock name="page.main.title" remove="true"/>
+        <referenceContainer name="header.container" remove="true"/>
+        <referenceContainer name="navigation.sections" remove="true"/>
+
+        <!-- <referenceBlock name="header.panel.wrapper" remove="true"/>
+        <referenceBlock name="minicart" remove="true"/>
+        <referenceBlock name="top.search" remove="true"/> -->
+        
+    </body>
+</page>

@@ -1,0 +1,129 @@
+/* GLOBAL */
+
+@font-face{
+    src:url("../fonts/Raleway.ttf") format("opentype");
+    font-family: 'Raleway';
+}
+h1{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+
+#maincontent{
+    width: 100%;
+    max-width: unset;
+}
+
+.header-160 {
+    background: rgb(51,51,51);
+    font-size: 1rem;
+}
+
+.header-160 .buttons-container{
+    max-width: 60rem;
+    margin: auto;
+}
+
+.header-160 .buttons-container>div {
+    display: inline-block;
+}
+.header-160 .widget-left{
+    width: 50%;
+}
+
+.header-160 .widget-right{
+    width: 15%;
+}
+
+.header-160 a{
+    display: inline-block;
+    color: white;
+    margin: 1.5rem 10px;
+}
+
+.header-160 p{
+    display: inline-block;
+}
+
+.form1-160{
+    background: url(../images/bg/form1.png) repeat rgb(255,255,255) 51% 19% / cover;
+    color: white;
+}
+
+.form1-160 .logo-160{
+    padding-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form1-160 h1{
+    font-size: 3.3rem;
+    line-height: 4.5rem;
+    margin-bottom: 5px;
+}
+
+.form1-160 h1 span{
+    background-color: #FF6700;
+    padding: 0px 5px;
+}
+
+.form-container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.form1-160 .form-left{
+    max-width: 300px;
+    margin: auto;
+}
+.form1-160 .accent{
+    position: relative;
+    font-size: 14px;
+}   
+
+.form1-160 .accent:after{
+    content: '';
+    border-bottom: 4px solid red;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+}
+
+
+.form2-160{
+    background: url(../images/bg/form2.png) repeat rgb(255,255,255) 51% 19% / cover;
+}
+
+.form4-160{
+    background: url(../images/bg/form4.png) repeat rgb(255,255,255) 51% 19% / cover;
+}
+
+
+@media all and (min-width: 768px){
+    .col-6{
+        width: 50%;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+    
+}
+
+@media all and (max-width: 767px){
+    #maincontent{
+        padding: 0px;
+    }
+    .header-160 .widget-left, 
+    .header-160 .widget-right{
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
+    .col-6{
+        width: 100%;
+    }
+
+    
+
+    
+}
