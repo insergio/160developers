@@ -1,10 +1,56 @@
 <div class="form4-160">
-    <h1>¡Refiere y gana!</h1>
-    <p>
-        ¿No tienes el perfil que buscamos, pero conoces a alguien que sí? Puedes referirlo y si es contratado ¡ganarás
-        USD
-        $50! *
-    </p>
-    <a>*Aplican términos y condiciones</a>
-    <button class="button-160">Referir</button>
+    <div class="form4-cont">
+        <h1><span>¡Refiere y gana!</span></h1>
+        <p>
+            ¿No tienes el perfil que buscamos, pero conoces a alguien que sí? Puedes referirlo y si es contratado ¡ganarás
+            USD
+            $50! *
+        </p>
+        <a id="tycbtn">*Aplican términos y condiciones</a>
+        <button id="referbtn" class="button-160">Referir</button>
+    </div>    
 </div>
+
+
+<div id="tycmodal">
+    <h1>Términos y condiciones:</h1>
+    <ol>
+        <li>El bono será efectivo solo por personas contratadas y estos deberán permanecer en la compañía por lo menos 1 mes.</li>
+        <li>El bono será cancelado una vez se haya cumplido el tiempo mínimo de permanencia.</li>
+        <li>Si la persona que refiere es empleada de NativApps este será un incentivo no constitutivo de salario y no hará parte de su base salarial para el cálculo de prestaciones sociales.</li>
+        <li>Si varias personas refieren el mismo perfil y este fuese contratado, el bono será entregado a la persona que hizo primero la referencia.</li>
+        <li>Esta actividad será válida hasta junio del año 2019.</li>
+        <li>Se podrán referir perfiles de todas las ciudades de Colombia y de Latinoamérica.</li>
+        <li>El valor del bono será entregado en efectivo o transferencia electrónica. Si resides en el extranjero, el costo de la transacción deberá ser asumido por la persona que refiere.</li>
+        <li>Si un candidato referido es contratado o descartado, la persona que lo refirió será notificada a través de un correo electrónico.</li>
+    </ol>
+</div>
+
+<div id="refermodal">
+    <?php echo $this->getLayout()->createBlock("Magento\Framework\View\Element\Template")->setTemplate("Insergio_JobForm::formrefer.phtml")->toHtml(); ?>
+</div>
+
+<script>
+    require(
+        [
+            'jquery',
+            'Magento_Ui/js/modal/modal'
+        ],
+        function($,modal) {
+            var options = {
+                type: 'popup',
+                responsive: true,
+                innerScroll: true
+            };
+            var popup = modal(options, $('#tycmodal'));
+            $("#tycbtn").on("click",function(){
+                $('#tycmodal').modal('openModal');
+            });
+
+            var popup = modal(options, $('#refermodal'));
+            $("#referbtn").on("click",function(){
+                $('#refermodal').modal('openModal');
+            });
+        }
+    );
+</script>

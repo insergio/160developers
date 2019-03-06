@@ -1,18 +1,27 @@
 <div class="form3-160">
-    <div class="col-4">
-        <h1>¿Por qué unirte a <span>160Developers?</span></h1>
-        <p>¡Descubre los beneficios de ser parte de este equipo y expande tus horizontes!</p>
-        <ul>
-            <li>Trabaja con los lideres del mercado más grande de tecnología </li>
-            <li>Conviértete en un manager de productos digitales </li>
-            <li>Trabaja con startups disruptivas</li>
-            <li>Crece profesionalmente, escala tus ingresos y alcanza libertad financiera  </li>
-            <li>Accede a oportunidades de capacitación</li>
-            <li>Trabaja en el mejor ambiente y disfruta de una cultura glocal </li>
-            <li>Trabajar desde casa también es una opción</li>
-        </ul>
-    </div>    
-    <div class="col-8">
-        <p>FORM<p>
+    <div class="form-container">
+        <div class="col-4">
+            <div class="form-left">
+                <h1>¿Por qué unirte a <span>160Developers?</span></h1>
+                <p>¡Descubre los beneficios de ser parte de este equipo y expande tus horizontes!</p>
+                <ul>
+                    <li>Trabaja con los lideres del mercado más grande de tecnología </li>
+                    <li>Conviértete en un manager de productos digitales </li>
+                    <li>Trabaja con startups disruptivas</li>
+                    <li>Crece profesionalmente, escala tus ingresos y alcanza libertad financiera  </li>
+                    <li>Accede a oportunidades de capacitación</li>
+                    <li>Trabaja en el mejor ambiente y disfruta de una cultura glocal </li>
+                    <li>Trabajar desde casa también es una opción</li>
+                </ul>
+
+                <img src="<?= /* @escapeNotVerified */ $this->getViewFileUrl('images/bg/form3.png');?>"/>
+            </div>
+        </div><div 
+        class="col-8">
+        <div class="form-right">
+            <h2>Cuéntanos cómo sería tu trabajo ideal </h2>
+            <?php echo $this->getLayout()->createBlock("Magento\Framework\View\Element\Template")->setTemplate("Insergio_JobForm::formideal.phtml")->toHtml(); ?>
+        </div>
+        </div>
     </div>
 </div>

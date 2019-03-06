@@ -1,0 +1,34 @@
+<!--@subject Nuevo registro de trabajo ideal  @-->
+
+{{template config_path="design/email/header_template"}}
+
+<table width="600" border="0" cellpadding="0" cellspacing="0" align="center">
+    <tr>
+        <td style="padding-top:20px; font-family: 'Open Sans', sans-serif;" valign="top">
+            <p align="justify" style="padding-top:20px; font-weight:300; font-size:15px; margin:0; padding:10px 0 0 0;">{{trans 'Lugar: %place' place=$place |raw}}</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding-top:20px; font-family: 'Open Sans', sans-serif;" valign="top">
+            <p align="justify" style="padding-top:20px; font-weight:300; font-size:15px; margin:0; padding:10px 0 0 0;">{{trans 'Horario: %time' time=$time |raw}}</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding-top:20px; font-family: 'Open Sans', sans-serif;" valign="top">
+            <p align="justify" style="padding-top:20px; font-weight:300; font-size:15px; margin:0; padding:10px 0 0 0;">{{trans 'Disponibilidad para viajar: %travel' travel=$travel |raw}}</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding-top:20px; font-family: 'Open Sans', sans-serif;" valign="top">
+            <p align="justify" style="padding-top:20px; font-weight:300; font-size:15px; margin:0; padding:10px 0 0 0;">{{trans 'Disponibilidad para mudarse: %move' move=$move |raw}}</p>
+        </td>
+    </tr>
+
+    <tr>
+        <td style="padding-top:20px; font-family: 'Open Sans', sans-serif;" valign="top">
+            <p align="justify" style="padding-top:20px; font-weight:300; font-size:15px; margin:0; padding:10px 0 0 0;">{{trans 'Dentro de 5 años: %years' years=$years |raw}}</p>
+        </td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer_template"}}

@@ -76,6 +76,34 @@ h1{
     max-width: 300px;
     margin: auto;
 }
+.form1-160 .form-right{
+    max-width: 350px;
+}
+
+.form1-160 .form-right>div{
+    padding: 30px;
+    border: 0;
+    border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+    background: rgb(0,0,0,0.2);
+}
+
+form input#area{
+    display: none;
+}
+
+.form1-160 form input, 
+.form1-160 form select{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    height: 40px
+}
+
+.form1-160 form span{
+    font-size: 1.3rem;
+}
+
+
 .form1-160 .accent{
     position: relative;
     font-size: 14px;
@@ -83,7 +111,7 @@ h1{
 
 .form1-160 .accent:after{
     content: '';
-    border-bottom: 4px solid red;
+    border-bottom: 4px solid #FF6700;
     position: absolute;
     left: 0;
     top: 100%;
@@ -93,20 +121,304 @@ h1{
 
 .form2-160{
     background: url(../images/bg/form2.png) repeat rgb(255,255,255) 51% 19% / cover;
+    padding-bottom: 30px;
 }
+
+.form2-160 h1{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.form2-160 h1 span{
+    position: relative;
+}
+
+.form2-160 h1 span:after{
+    content: '';
+    border-bottom: 4px solid #FF6700;
+    position: absolute;
+    left: -50%;
+    top: 110%;
+    width: 200%;
+}
+
+.form2-160 p{
+    color: #98a0a6;
+}
+
+.vacancy-item{
+    width: calc(33% - 20px);
+    display: inline-block;
+    margin: 7px 10px;
+    border-radius: 10px;
+    vertical-align: top;
+    height: 40px;
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.10)
+
+}
+
+.vacancy-item a{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #FF6700;
+}
+
+.vacancy-item>div{
+   position: absolute;
+   top: 50%;
+   left: 10px;
+   max-width: 200px;
+   transform: translate(0%,-50%);
+}
+.vacancy-item p{
+    margin: 0px;
+
+}
+
+.form3-160{
+    margin-bottom: 50px;
+}
+
+.form3-160 h1 span{
+    color: #FF6700;
+}
+
+.form3-160  ul {
+    list-style: none;
+    padding-left: 10px;
+    color: #98a0a6;
+}
+
+.form3-160 p{
+    color: #98a0a6;
+        font-size: 16px
+
+}
+
+.form3-160 .form-left{
+    padding: 20px;
+}
+
+.form3-160 .form-left ul{
+    font-size: 16px
+}
+
+
+.form3-160 .form-right{
+    padding: 50px;
+    padding-top: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.10);
+    color: #6B7780;
+}
+
+.form3-160 .form-right input{
+    margin-bottom: 15px;
+}
+
+.form3-160 .form-right h2{
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF6700;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.form3-160 .form-right select{
+    height: 40px;
+    border-radius: 5px;
+    margin: 10px auto 15px;
+    color: #6B7780;
+}
+
+.form3-160 .form-right textarea{
+    margin-bottom: 20px
+}
+
+#vacmodal{
+    display: none;
+}
+  
+.form3-160  ul li::before {
+    content: "\2022"; 
+    color: #FF6700;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
 
 .form4-160{
-    background: url(../images/bg/form4.png) repeat rgb(255,255,255) 51% 19% / cover;
+    background: url(../images/bg/form4.png) repeat rgb(51,51,51) 51% 19% / cover;
+    color: white;
+    text-align: center;
 }
 
+.form4-160 h1 span{
+    position: relative;
+}
+
+.form4-160 h1 span:after{
+    content: '';
+    border-bottom: 4px solid #FF6700;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+}
+
+.form4-cont{
+    max-width: 450px;
+    margin: auto;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.form4-160 a{
+    display: block;
+    color: white;
+    text-decoration: underline;
+    font-size: 12px;
+    padding-bottom: 20px;
+
+}
+
+.button-160-container{
+    text-align: center;
+}
+
+.button-160{
+    color: white;
+    border-radius: 50px;
+    background-color: #FF6700;
+    border: 1px solid #FF6700;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 150px;
+    box-shadow: none !important;
+}
+
+
+.footer-160{
+    background-color: rgb(51,51,51);
+}
+
+.form1-160 .col-6{
+    vertical-align: top;
+}
+
+.footer-160 .logo{
+    float: none;
+    text-align: center;
+    margin: 0px;
+}
+
+.footer-160 .logo img{
+    display: inline;
+}
+
+.footer-160 p{
+    font-size: 1.8em;
+    color: white;
+}
+
+.footer-160 a img{
+    margin-right: 30px;
+}
+
+.footer-160 p span{
+    background-color: #FF6700;
+    padding: 0px 5px;
+}
+
+.footer-160 .form-container{
+    padding: 60px 0px;
+}
+
+.footer-160 .col-6{
+    text-align: center;
+    margin: auto;
+}
+
+.form3-160 #place, 
+.form3-160 #time, 
+.form3-160 #travel, 
+.form3-160 #move{
+    display: none;
+}
+
+.copyright{
+    background-color: rgb(51,51,51);    
+}
+
+.modal-inner-wrap{
+    overflow-y: auto !important;
+}
+.modal-content{
+    overflow-y: unset !important;
+}
+.modal-title{
+    display: none;
+}
+
+.modal-header h1{
+    color: #FF6700;
+    text-align: center;
+    font-size: 2.5em
+}
+.modal-header .head{
+    list-style: none;
+    padding-left: 0px;
+}
+.modal-header ul{
+    padding-left: 18px;
+}
+
+.modal-inner-wrap{
+    color: #575757;
+}
+
+.modal-inner-wrap input,
+.modal-inner-wrap select{
+    height: 40px;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+.modal-inner-wrap footer{
+    display: none;
+}
+
+.checkbox-160{
+    height: unset !important;
+}
 
 @media all and (min-width: 768px){
     .col-6{
         width: 50%;
         box-sizing: border-box;
         display: inline-block;
+        vertical-align: middle;
+    }
+
+    .col-8{
+        width: 55%;
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: middle;
     }
     
+    .col-4{
+        width: 45%;
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: middle;
+    }
 }
 
 @media all and (max-width: 767px){
@@ -119,11 +431,27 @@ h1{
         text-align: center;
         font-size: 14px;
     }
-    .col-6{
+    .col-6, .col-8, .col-4{
         width: 100%;
     }
-
     
+    .footer-160 .logo{
+        margin-bottom: 30px;
+    }
+
+    .vacancy-item{
+        display: block;
+        width: 300px;
+        margin: 10px auto;
+    }
+    .vacancy-item>div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 200px;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
 
     
 }

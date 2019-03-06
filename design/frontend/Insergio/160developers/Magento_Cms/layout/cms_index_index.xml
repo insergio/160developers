@@ -24,6 +24,10 @@
         <referenceBlock name="page.main.title" remove="true"/>
         <referenceContainer name="header.container" remove="true"/>
         <referenceContainer name="navigation.sections" remove="true"/>
+        <referenceBlock name="footer_links" remove="true" />
+        <referenceBlock name="form.subscribe" remove="true" />
+        <referenceBlock name="columns" remove="true" />
+
 
         <!-- <referenceBlock name="header.panel.wrapper" remove="true"/>
         <referenceBlock name="minicart" remove="true"/>

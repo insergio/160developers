@@ -1,0 +1,74 @@
+<?php
+  $currentUrl = $this->getUrl('*/*/*', ['_current' => true, '_use_rewrite' => true]);
+?>
+<div class="bodyFormtrabajo">
+  <form class="formtrabajo" id="contact-form" action="trabajanosotros/index/ajaxsenddata" method="post" enctype="multipart/form-data">
+  <input type="hidden" name="urlformcontacus" id="urlformcontacus"  value="<?php echo $currentUrl; ?>">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6">
+         <input type="text" name="formtype" id="formtype" value=1; style="display:none;" required>
+          <span>Nombre:</span>
+          <input type="text" name="nombre" id="nombre" required>
+          <span>Celular:</span>
+          <input type="text" name="celular" id="celular" required>
+          <span>Correo</span>
+          <input type="text" data-validate="{required:true, 'validate-email':true}" name="email" id="email" required>
+          <span>Url de LinkedIn</span>
+          <input type="text" name="linkedin" id="linkedin" required>
+          <span>Vacante</span>
+          <input name="area" id="area" title="<?php echo __('area') ?>" value="Mid Senior UI/UX Designer" class="input-text hide" type="text" />
+          <select name="area" id="area_mirror">
+          <option value="Mid Senior UI/UX Designer">Mid Senior UI/UX Designer</option>
+            <option value="Senior UI/UX Designer">Senior UI/UX Designer</option>
+            <option value="Mid Senior Front-end JavaScript Developer">Mid Senior Front-end JavaScript Developer</option>
+            <option value="Senior Front-end JavaScript Developer">Senior Front-end JavaScript Developer</option>
+            <option value="Mid HMTL Developer">Mid HMTL Developer</option>
+            <option value="Senior HTML Developer">Senior HTML Developer</option>
+            <option value="Mid Delivery Manager">Mid Delivery Manager</option>
+            <option value="Senior Delivery Manager">Senior Delivery Manager</option>
+            <option value="Mid React Native Developer">Mid React Native Developer</option>
+            <option value="Senior react Native Developer">Senior react Native Developer</option>
+            <option value="QA Engineer">QA Engineer</option>
+            <option value="Senior QA Engineer">Senior QA Engineer</option>
+            <option value="Mid Senior Technical Project Manager">Mid Senior Technical Project Manager</option>
+            <option value="Senior Technical Project Manager">Senior Technical Project Manager</option>
+            <option value="Automated QA Engineer">Automated QA Engineer</option>
+            <option value="Senior Automated QA Engineer">Senior Automated QA Engineer</option>
+            <option value="Mid Senior Java Developer">Mid Senior Java Developer</option>
+            <option value="Senior Java Developer">Senior Java Developer</option>
+            <option value="iOS Developer">iOS Developer</option>
+            <option value="Android Developer">Android Developer</option>
+            <option value="NodeJs Developer">NodeJs Developer</option>
+            <option value="Python Developer">Python Developer</option>
+            <option value="PHP Developer">PHP Developer</option>
+            <option value="Hybrid Mobile Developer">Hybrid Mobile Developer</option>
+            <option value="FullStack Web Developer">FullStack Web Developer</option>
+            <option value="ReactJs Developer">ReactJs Developer</option>
+            <option value="Web Developer">Web Developer</option>
+            <option value="Front End Web Developer">Front End Web Developer</option>
+            <option value="Vue.Js Developer">Vue.Js Developer</option>
+          </select>
+          <label><input class="checkbox-160" type="checkbox" name="data">Acepto la política de tratamiento de datos</label>
+          <div class="button-160-container">
+            <button class="button-160" type="submit"  value="Submit">Enviar</button>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+    <br>
+  </form>
+</div>
+
+<script>
+  require(['jquery'], function($){
+
+    $(document).ready(function () {
+        $('#area_mirror').change(function () {
+            $('#area').val($(this).val());
+        });
+    });
+
+  });
+</script>

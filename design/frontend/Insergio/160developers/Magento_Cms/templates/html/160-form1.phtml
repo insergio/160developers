@@ -20,8 +20,10 @@
                 </p>
             </div>
         </div><div
-             class="col-6">
-            <p>FORM</p>
+            class="col-6">
+            <div class="form-right">
+                <?php echo $this->getLayout()->createBlock("Magento\Framework\View\Element\Template")->setTemplate("Insergio_JobForm::form.phtml")->toHtml(); ?>
+            </div>
         </div>
     </div>
 

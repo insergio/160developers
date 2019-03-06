@@ -1,8 +1,686 @@
+<?php 
+$vacancies = array(
+    "Mid Senior UI/UX Designer" =>array(
+        "head"=>array(
+            "English: Intermediate",
+            "Experience: 4 years"
+        ),
+        "skills"=>array(
+            "Portfolio of software design projects.",
+            "Experience using Sketch and Zeplin.",
+            "Knowledge of wireframe and prototyping tools like InVision or similar.",
+            "Up-to-date knowledge of design software like Adobe Illustrator and Photoshop."
+        )
+    ),
+    "Senior UI/UX Designer " =>array(
+        "head"=>array(
+            "English: Advanced",
+            "Experience: 7 years"
+        ),
+        "skills"=>array(
+            "Portfolio of software design projects",
+            "Experience using Sketch and Zeplin",
+            "Knowledge of wireframe and prototyping tools like InVision or similar",
+            "Up-to-date knowledge of design software like Adobe Illustrator and Photoshop"
+        )
+    ),
+    "Mid Senior Front-end JavaScript Developer" =>array(
+        "head"=>array(
+            "English: Intermediate",
+            "Experience: 3 years"
+        ),
+        "experience"=>array(
+            "JavaScript, including DOM manipulation and the JavaScript object model  ",
+            "React.js and its core principles",
+            "Popular React.js workflows (such as Flux or Redux)",
+            "Data structure libraries (e.g., Immutable.js)",
+            "CSS preprocessors like Sass or LESS",
+            "common front-end development tools such as Grunt, Gulp, Bower, Babel, Webpack, NPM, etc",
+            "Benchmarking page performance and implementing optimization"
+        ),
+        "knowledge"=>array(
+            "Newer specifications of EcmaScript",
+            "Isomorphic React is a plus",
+            "RESTful APIs",
+            "Modern authorization mechanisms, such as JSON Web Token",
+            "Modern front-end build pipelines and tools",
+            "Code versioning tools like Git",
+            "Unit Testing with Karma or Jest",
+            "Commitment to software practices of continuous Integration, automated/repeatable testing, and collaborative work environments"
+        )
+    ),
+    "Senior Front-end JavaScript Developer" =>array(
+        "head"=>array(
+            "English: Advanced",
+            "Experience: 5 years"
+        ),
+        "experience"=>array(
+            "JavaScript, including DOM manipulation and the JavaScript object model  ",
+            "React.js and its core principles",
+            "Popular React.js workflows (such as Flux or Redux)",
+            "Data structure libraries (e.g., Immutable.js)",
+            "CSS preprocessors like Sass or LESS",
+            "Common front-end development tools such as Grunt, Gulp, Bower, Babel, Webpack, NPM, etc",
+            "Benchmarking page performance and implementing optimization"
+        ),
+        "knowledge"=>array(
+            "Newer specifications of EcmaScript",
+            "Isomorphic React is a plus",
+            "RESTful APIs",
+            "Modern authorization mechanisms, such as JSON Web Token",
+            "Modern front-end build pipelines and tools",
+            "Code versioning tools like Git",
+            "Unit Testing with Karma or Jest",
+            "Commitment to software practices of continuous Integration, automated/repeatable testing, and collaborative work environments."
+        )
+    ),
+    "Mid HMTL Developer" =>array(
+        "head"=>array(
+            "English: Intermediate",
+            "Experience: 3 years"
+        ),
+        "experience"=>array(
+            "CSS preprocessors (LESS, SASS, Stylus) and CSS methodologies (BEM, OOCSS, SMACSS)",
+            "Responsive and adaptive websites",
+            "Handlebars",
+            "JavaScript is nice to have, but not required"
+        ),
+        "knowledge"=>array(
+            "HTML5 (Semantic and valid markup)",
+            "CSS3 (Flexbox, Grid Layout)",
+            "Basic understanding of user experience, visual design, interaction design. Keen eye for detail",
+            "Tech Stack: (Handlebars, LESS, ReactJS, jQuery , Gulp, Zeplin, Sketch)",
+            "Browsers: (Latest Chrome, Firefox, Safari, Edge, possibility fallback IE11 styles, iOS Safari, Android Chrome)"
+        )
+    ),
+    "Senior HTML Developer" =>array(
+        "head"=>array(
+            "English: Advanced",
+            "Experience: 5 years"
+        ),
+        "experience"=>array(
+            "CSS preprocessors (LESS, SASS, Stylus) and CSS methodologies (BEM, OOCSS, SMACSS)",
+            "Responsive and adaptive websites",
+            "Handlebars",
+            "JavaScript is nice to have, but not required"
+        ),
+        "knowledge"=>array(
+            "HTML5 (Semantic and valid markup)",
+            "CSS3 (Flexbox, Grid Layout)",
+            "Basic understanding of user experience, visual design, interaction design. Keen eye for detail",
+            "Tech Stack: (Handlebars, LESS,  ReactJS, jQuery , Gulp, Zeplin, Sketch)",
+            "Browsers: (Latest Chrome, Firefox, Safari, Edge, possibility fallback IE11 styles, iOS Safari, Android Chrome)"
+        )
+    ),
+    "Mid Delivery Manager" =>array(
+        "head"=>array(
+            "English: Advanced",
+            "Experience: 4 – 8 years"
+        ),
+        "skills"=>array(
+            "Experience developing high-traffic mobile or web solutions for projects that have aggressive timelines",
+            "Experience managing teams of 8-12 delivering responsive web or mobile projects",
+            "Experience with hands-on technical delivery.  Former developer is preferred.",
+            "Experience with digital technologies used to develop real-time web sites and mobile applications, including Java, Javascript, HTML, CSS, XML and JSON file transforms and handling",
+            "Experience with Atlassian Suite or other",
+            "Experience translating business requirements to technical requirements and system architecture",
+            "Skilled at leading development teams, mentoring and coaching across role areas.",
+            "Proficient in inspiring confidence within an engineering team"
+        ),
+        "nicetohave"=>array(
+            "Preferred: Adobe Experience Manager, Ooyala, Adobe Analytics"
+        )
+    ),
+    "Senior Delivery Manager" =>array(
+        "head"=>array(
+            "English: Advanced",
+            "Experience: 9 years"
+        ),
+        "skills"=>array(
+            "Experience developing high-traffic mobile or web solutions for projects that have aggressive timelines",
+            "Experience managing teams of 8-12 delivering responsive web or mobile projects",
+            "Experience with hands-on technical delivery.  Former developer is preferred",
+            "Experience with digital technologies used to develop real-time web sites and mobile applications, including Java, Javascript, HTML, CSS, XML and JSON file transforms and handling",
+            "Experience with Atlassian Suite or other",
+            "Experience translating business requirements to technical requirements and system architecture",
+            "Skilled at leading development teams, mentoring and coaching across role areas.",
+            "Proficient in inspiring confidence within an engineering team"
+        ),
+        "nicetohave"=>array(
+            "Preferred: Adobe Experience Manager, Ooyala, Adobe Analytics"
+        )
+    ),
+    "Mid React Native Developer" =>array(
+        "head"=>array(
+            "English: Intermediate",
+            "Experience: 3 years"
+        ),
+        "skills"=>array(
+            "Experience with ES6 and high order components",
+            "Experience consuming JSON-based REST API’s.",
+            "Experience with JS frameworks like React, Angular, as well as HTML/CSS.",
+            "Experience in React Native.",
+            "Experience building web and mobile front-ends.",
+            "Development experience in a Linux/Unix environment."
+
+        ),
+        "nicetohave"=>array(
+            "Experience with UX and UI design."
+        )
+    ),
+    "Senior react Native Developer" =>array(
+        "head"=>array(
+            "English: Advanced",
+            "Experience: 5 years",
+        ),
+        "skills"=>array(
+            "Experience with ES6 and high order components",
+            "Experience consuming JSON-based REST API’s",
+            "Experience with JS frameworks like React, Angular, as well as HTML/CSS",
+            "Experience in React Native",
+            "Experience building web and mobile front-ends",
+            "Development experience in a Linux/Unix environment",
+        ),
+        "nicetohave"=>array(
+            "Experience with UX and UI design",
+        )
+    ),
+    "QA Engineer " =>array(
+        "head"=>array(
+            "English: Intermediate",
+            "Experience: 2 years",
+        ),
+        "experience"=>array(
+            "Using HTTP debugging proxy tool (Charles, Fiddler, etc.)",
+            "Setting up dynamic reports in Confluence",
+            "Any of development lifecycles (Agile, Waterfall, etc.)",
+            "Advanced using of test management tool",
+            "Advanced using of bug-tracking tool",
+            "Root cause analysis",
+
+
+        ),
+        "knowledge"=>array(
+            "HTML/ CSS, JSON/ XML",
+            "Developing test strategy and test plan",
+            "Planning & estimation techniques",
+            "Understanding of risk evaluation and mitigation techniques",
+            "Any non-functional testing (installation, performance testing etc.)",
+        ),
+        "nicetohave"=>array(
+            "Thorough knowledge of QA best practices across the SDLC"
+        )
+    ),
+    "Senior QA Engineer" =>array(
+        "head"=>array(
+            "English: Advanced",
+            "Experience: 5 years",
+        ),
+        "experience"=>array(
+            "Defining tools for testing purposes (Charles, Postman, etc.)",
+            "Using any non-functional testing (installation, performance testing etc.)",
+            "CDNs and its testing approaches",
+            "Developing test documentation (test strategy, test plan, etc.)",
+            "Risk evaluation and mitigation techniques",
+            "Setting up dynamic reports in Confluence",
+            "Using test management tool and its customization",
+        ),
+        "knowledge"=>array(
+            "QA best practices",
+            "Advanced understanding of HTML/ CSS, JSON/ XML (able to create and modify)",
+            "Understanding of benefits from automation and how it can be utilized in the QA needs",
+            "Able to define testing process for a project (define bug lifecycle, process of test preparation, document templates etc.)",
+        )
+    ),
+    "Mid Senior Technical Project Manager" =>array(
+        "head"=>array(
+            "English: Advance",
+            "Experience: 9 years",
+
+        ),
+        "skills"=>array(
+            "3+ years of experience as a project manager for information technology sector specifically in software development projects.",
+            "Strong technical background, preferred a former developer (5 years of experience)",
+            "Experience working with agile methodologies",
+            "Team leadership.",
+            "Management.",
+            "Tasks planning.",
+            "Excellent written and verbal communication skills.",
+            "Critical thinking and problem solving.",
+            "Negotiation.",
+            "Conflict resolution.",
+        )
+    ),
+    "Senior Technical Project Manager" =>array(
+        "head"=>array(
+            "English: Advance",
+            "Experience: 10 years",
+        ),
+        "skills"=>array(
+            "5+ years of experience as a project manager for information technology sector specifically in software development projects",
+            "Experience working with agile methodologies",
+            "Team leadership",
+            "Management",
+            "Tasks planning",
+            "Strong technical background, preferred a former developer",
+            "Excellent written and verbal communication skills",
+            "Critical thinking and problem solving",
+            "Negotiation",
+            "Conflict resolution",
+        )
+    ),
+    "Automated QA Engineer" =>array(
+        "head"=>array(
+            "English: Intermediate",
+            "Experience: 1.5 years",
+        ),
+        "experience"=>array(
+            "Web/Mobile/Desktop automation",
+            "Planning & estimation techniques",
+            "Code-review practices",
+            "Using OOP/OOD in automation",
+            "Automation of RESTful or SOAP Web Services",
+            "Agile software development lifecycle",
+            "XUnit frameworks usage (JUnit, TestNG or others)",
+            "Source control system",
+            "Configuration for build and package management tools (Maven, NPM, etc.)",
+            "CSS/ HTML, JSON/ XML",
+            "XPath/ CSS",
+            "Configuration automation for CI",
+        ),
+        "knowledge"=>array(
+            "Software testing theory",
+            "Any programming language and best practice (Java, JavaScript, PHP, etc.)",
+        )
+    ),
+    "Senior Automated QA Engineer " =>array(
+        "head"=>array(
+            "English: Advanced",
+            "Experience: 4 years",
+        ),
+        "experience"=>array(
+            "Web/Mobile/Desktop automation",
+            "Software testing theory",
+            "OOP/OOD/OOA",
+            "Any programming language and best practice (Java, JavaScript, PHP, etc.)",
+            "Code review practices",
+            "Setting up & tracking project relevant KPIs",
+            "Planning & estimation techniques",
+            "Developing automation test strategy and automation plan",
+            "CSS/ HTML",
+            "XPath/ CSS",
+            "Designing and building automation framework for testing RESTful or SOAP Web Services",
+            "Designing and incorporation of automation in CI pipeline",
+            "Designing and implementing automation framework based on XUnit",
+            "Practical using of Page Object Pattern(s)",
+            "Defining coding styles and best practices for automation team",
+        )
+    ),
+    "Mid Senior Java Developer" =>array(
+        "head"=>array(
+            "English: Intermediate",
+            "Experience: 4 – 8 years",
+        ),
+        "experience"=>array(
+            "Object-oriented programming",
+            "Key Java concepts such as Generics & Collections, Reflection, Lambda, Stream API, I/0 Fundamentals, Exception Handling, Date/Time API",
+            "Concurrent programming",
+            "Servlets and Java frameworks such as Spring or Java EE",
+            "REST/SOAP and Micro Services",
+            "JDBC concepts, connection pooling and ORM frameworks such as Hibernate",
+            "Java Messaging Service (JMS) and any JMS libraries",
+            "NoSQL concepts and any NoSQL databases",
+            "Writing SQL queries ",
+            "Writing unit, integration and functional tests using libraries/frameworks such as JUnit, Spock or Mockito",
+            "Working with Web & Application servers such as Jetty, Tomcat or WebSphere",
+            "Version control system (Git) and any code review tools",
+            "Scrum, Jira and Confluence",
+            "Using standard IDEs such as IntelliJ or Eclipse",
+        ),
+        "knowledge"=>array(
+            "Advanced concepts such as Deadlocks, Caching, Garbage Collection, RxJava, Async Programming, AOP, Performance Tuning and JMX",
+            "Security concepts, Transaction Management, Serialization Protocols and HTTP Protocol",
+            "Design and Enterprise Integration Patterns",
+            "Java Language Specification (JLS) & Java Specification, Request (JSR)",
+            "Building tools such as Gradle or Maven.",
+            "Linux Shell Scripting",
+            "Investigate issues, fix bugs and document bug resolution",
+            "Perform programming assignments with clear and complete specifications",
+        ),
+        "nicetohave"=>array(
+            "Basic knowledge in cloud programming and concepts",
+            "Basic knowledge in advanced libraries and tools such as RxJava, Camel, Protobuf or Avro",
+        )
+    ),
+    "Senior Java Developer " =>array(
+        "head"=>array(
+            "English: Advance",
+            "Experience: 8+ years",
+        ),
+        "experience"=>array(
+            "Object-oriented programming",
+            "Key Java concepts such as Generics & Collections, Lambda, Stream API, I/0 Fundamentals, Exception Handling, Date/Time API",
+            "Concurrent programming",
+            "Servlets and Java frameworks such as Spring, Java EE",
+            "REST/SOAP and Micro Services",
+            "Java Messaging Service (JMS) & Advanced Message Queue Protocol (AMQP) and libraries",
+            "JDBC concepts, connection pooling and ORM frameworks such as Hibernate",
+            "NoSQL concepts and any NoSQL databases ",
+            "Advanced concepts such as Deadlocks, Garbage Collection, Async Programing, AOP, Transaction Management, Caching, Performance Tuning, JMX",
+            "Building tools such as Gradle, Maven",
+            "Linux Shell Scripting",
+            "Working with web & application servers such as Jetty, Tomcat, WebSphere",
+            "Version control system (Git) and any code review tools",
+            "Scrum, Jira, Confluence",
+            "Using standard IDEs such as IntelliJ, Eclipse",
+        ),
+        "knowledge"=>array(
+            "Security, Transaction Management, Serialization Protocols, HTTP Protocol",
+            "Java Language Specification (JLS) & Java Specification Request (JSR)",
+            "Any distributed libraries & frameworks such as Apache Storm, ZooKeeper, Hazelcast, Akka, Camel",
+            "Design and Enterprise Integration Patterns",
+            "Design and perform programming assignments with clear, concise and maintainable code",
+            "Design and write unit, integration and functional tests, investigate issues and fix bugs",
+            "Design and architect small scale projects or medium scale projects with little or no guidance from Solution Architect or Technical Lead Mentor, code review and provide guidance to fellow team members",
+            "Research libraries, tools, services and demonstrate the findings to Solutions Architect or Technical Head",
+        ),
+        "nicetohave"=>array(
+            "Nice to have:",
+            "Working to advanced knowledge in cloud programming concepts, cloud platforms such as AWS, GCP, Cloud Foundry",
+            "Working to advanced knowledge in advanced libraries and tools such as RxJava, Protobuf, Avro, GraphQL",
+        )
+    ),
+    "iOS Developer " =>array(
+        "head"=>array(
+            "English: Intermediate",
+            "Experience: 5+ years",
+        ),
+        "skills"=>array(
+            "Swift 3 expertise and Familiarity in Objective-C",
+            "Experience in MVP pattern and refactoring old codebase into MVP",
+            "Frameworks and APIs like Foundation, UIKit, and CocoaTouch",
+            "Understanding of Interface Builder & AutoLayout",
+            "Experience working with Firebase (Database, Storage, API’s, Cloud)",
+            "Familiarity with In-App Purchase and Lifecycle of subscription",
+            "Audio I/O and Processing, Superpowered Experience",
+            "Must have worked on firebase and google cloud stack",
+            "Experience: 4 years",
+        )
+    ),
+    "Android Developer " =>array(
+        "head"=>array(
+            "English: Intermediate",
+            "Experience: 5+ years",
+        ),
+        "skills"=>array(),
+        "experience"=>array(
+            "Designing clean and maintainable codebase",
+            "Multithreading programming",
+            "Writing unit tests and testable code",
+
+        ),
+        "knowledge"=>array(
+            "Android SDK performance tools and optimization techniques",
+            "Reactive Pattern e.g. Rx Java / Promisify.",
+            "Lifecycle, Services, Job Schedulers, Intent Services, Custom Independent UI Components /",
+            "Modules, Refactoring.",
+            "Understanding user interface development and ability of proper data or business logic separation from view",
+            "Optimized XML UI using Constraints and Custom re-usable modules",
+            "Audio I/O and Processing, Superpowered Experience",
+            "Firebase and google cloud stack",
+        ),
+        "nicetohave"=>array(
+            "Basic knowledge in cloud programming and concepts.",
+            "Basic knowledge in advanced libraries and tools such as RxJava, Camel, Protobuf or Avro.",
+        )
+    ),
+    "NodeJs Developer " =>array(
+        "head"=>array(
+            "English: Advanced",
+            "Experience: 4 – 8 years",
+        ),
+        "experience"=>array(
+            "AWS",
+            "Building RESTful APIs using AWS latest technologies like AWS Fargate, API Gateway, Amazon Aurora, and AWS Cognito",
+            "Solving problems related to big data, single-page web applications, relational databases, and high-availability architectures",
+
+        ),
+        "knowledge"=>array(
+            "Modern backend JavaScript (Node.js, Express), frontend JavaScript, HTML, CSS as well as latest libraries and frameworks",
+            "Asynchronous programming patterns and service-oriented architecture (SOA) solutions",
+        ),
+        "nicetohave"=>array()
+    ),
+    "Python Developer" =>array(
+        "head"=>array(
+            "English: Intermediate",
+            "Experience: 4 – 7 years ",
+        ),
+        "skills"=>array(
+            "JavaScript, HTML5, CSS, Python, JSON",
+            "Gunicorn, Web Sockets, Flask, SQL Alchemist, Celery",
+            "SYSTEMD, Let’s Encrypt, AWS",
+            "Django Rest Framework, Nginx",
+            "SQL, Postgres",
+            "Experience working in Linux",
+            "Postman, GIT",
+        ),
+        "nicetohave"=>array(
+            "Docker",
+            "PLSQL",
+        )
+    ),
+    "PHP Developer" =>array(
+        "head"=>array(
+            "English: Advanced",
+            "Experience: 4 – 8 years",
+
+        ),
+        "experience"=>array(
+            "PHP latest releases and Jquery",
+            "SQL to MariaDB.",
+            "Cloud",
+        ),
+        "nicetohave"=>array(
+            "Docker explosure ",
+            "DeVops experience ",
+        )
+    ),
+    "Hybrid Mobile Developer " =>array(
+        "head"=>array(
+            "English: Advanced",
+            "Experience: 5-8 years",
+        ),
+        "skills"=>array(
+            "Ability to read / interpret / leverage Python-based AI code",
+            "Redis (in-memory DB storage)",
+            "Amazon DynamoDB (primary DB storage)",
+            "CDN experience",
+            "Xamarin (mobile wrapping framework)",
+        ),
+        "nicetohave"=>array(
+            "Video streaming experience",
+            "Machine learning experience",
+            "Working with remote teams",
+            "Standard tools – Github, Bit, Jira, etc. ",
+            "Unit test process understanding and approach",
+        )
+    ),
+    "FullStack Web Developer " =>array(
+        "head"=>array(
+            "English: Intermediate",
+            "Experience: 5+ years",
+        ),
+        "skills"=>array(
+            "PHP with MVC Frameworks like Codeigniter",
+            "Web Frontend [HTML/CSS/JS/jQuery/Vue/Angular/Webkit]",
+            "NodeJS [API’s, Async Concept, ES6]",
+            "Source Control, Basic Deployment Experience in AWS, Google Cloud",
+            "Experience in structuring in NoSQL DB, MySQL DB",
+            "Web Security and REST API’s",
+            "OOP",
+            "Experience with Firebase Database, Storage, Cloud Functions, API’s and Structure",
+        ),
+        "nicetohave"=>array(
+            "Python, Linux",
+            "Should write clean and commented code",
+            "Should think/discuss future possibilities and issues before implementing",
+            "Passionate about learning and implementing for making web part better every day",
+            "Firebase and google cloud stack"
+        )
+    ),
+    "ReactJs Developer " =>array(
+        "head"=>array(
+            "English: Intermediate",
+            "Experience: 4 – 7 years ",
+        ),
+        "skills"=>array(
+            "JavaScript, Ecma 6, CSS 3, HTML 5 ",
+            "Materialize, Materalui or Bootstrap ",
+            "Redux Jest ",
+            "Experience in connecting and consuming API (API REST)",
+        )
+    ),
+    "Web Developer" =>array(
+        "head"=>array(
+            "English: Advanced",
+            "Experience: 4+ years",
+        ),
+        "skills"=>array(
+            "Bachelor of Science degree in Computer Science or similar relevant field",
+            "Extensive experience in web development frameworks, in particular Angular (2+)",
+            "Extensive experience in Object Oriented Programming concepts and design patterns",
+            "Good experience with NodeJS, ExpressJS, JavaScript and TypeScript ",
+            "Good understanding of server-side CSS preprocessors such as Sass",
+            "Proficient understanding of code versioning tools such as git",
+            "Creating schemas that represent and support business processes",
+            "Ability to implement automated testing platforms and unit tests",
+        )
+    ),
+    "Front End Web Developer" =>array(
+        "head"=>array(
+            "English: Advanced",
+            "Experience: 4+ years",
+        ),
+        "experience"=>array(
+            "UI design experience",
+            "Understanding of design principles for scalable applications with high availability.",
+        ),
+        "knowledge"=>array(
+            "Strong knowledge of front-end technologies, such as JavaScript, HTML5 and CSS3",
+            "Strong knowledge of object-oriented PHP programming",
+            "Knowledge of PHP web frameworks (especially in Laravel 5.7)",
+        )
+    ),
+);
+
+//$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+?>
 <div class="form2-160">
-    <div>
-        <p>TEXT</p>
-        <i class="fa fa-plus"></i>
-    </div>
-
-
+    <div class="form-container">
+        <h1><span>Vacantes</span></h1>
+        <?php
+            foreach($vacancies as $key => $x_value) {
+                echo('<div class="vacancy-item">
+                        <div>
+                            <p>'.$key.'</p>
+                        </div>
+                        <a id="'.$key.'" class="vacbtn"><i class="fa fa-plus"></i></a>
+                    </div>'); 
+            }
+        ?>
+    </div>    
 </div>
+
+
+<div id="vacmodal">
+
+    <?php echo $this->getLayout()->createBlock("Magento\Framework\View\Element\Template")->setTemplate("Insergio_JobForm::form.phtml")->toHtml(); ?>
+</div>
+
+
+<script>
+    require(
+        [
+            'jquery',
+            'Magento_Ui/js/modal/modal'
+        ],
+       
+
+        function($,modal) {
+
+            var obj = JSON.parse('<?php echo json_encode($vacancies) ?>');
+            console.log(obj);
+            
+            $(".vacbtn").on("click",function(){
+                console.log("asf");
+                var id=($(this).attr("id"));
+                currentObj=(obj[id]);
+                var text="";
+                text+="<h1>"+id+"</h1>";
+                text+=list(currentObj);
+                console.log(text);
+                var options = {
+                    type: 'popup',
+                    responsive: true,
+                    innerScroll: true,
+                    title: text
+                };
+                var popup = modal(options, $('#vacmodal'));
+                $('#vacmodal').modal('openModal');
+            });
+
+            function list(arr){
+
+                let fields=["head", "skills", "experience", "knowledge", "nicetohave"];
+                let list="";
+                console.log(arr);
+                for (let j = 0; j < fields.length; j++) {
+                    let current=arr[fields[j]];
+                    if(current){
+                        console.log(typeof current);
+                        console.log(current);
+                        console.log(Object.keys(current).length);
+                        if(Object.keys(current).length){
+                            let heading="";
+                            switch(fields[j]){
+                                case "skills":
+                                    heading="Required kills";
+                                    break;
+                                case "experience":  
+                                    heading="Experience";
+                                    break;
+                                case "knowledge":  
+                                    heading="Knowledge";
+                                    break;  
+                                case "nicetohave":  
+                                    heading="Nice to have";
+                                    break;  
+
+                            }
+                            if(heading){
+                                list+="<b><p>"+heading+"</p></b>";
+                            }
+                            list+="<ul class='"+fields[j]+"'>";
+                            console.log(current);
+                            for (let i = 0; i < Object.keys(current).length; i++) {
+                                console.log(current[i]);
+                                list+="<li>"+current[i]+"</li>";
+                            }
+                            list+="</ul>"
+                            console.log(list);
+                        }
+
+                    }
+                    
+                }
+                return list;
+            }
+        }
+
+    );
+</script>
+
+
+
+

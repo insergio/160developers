@@ -1,0 +1,99 @@
+<?php
+$currentUrl = $this->getUrl('*/*/*', ['_current' => true, '_use_rewrite' => true]);
+?>
+<div class="bodyFormtrabajo">
+  <form class="formtrabajo" id="contact-form" action="trabajanosotros/index/ajaxsenddata" method="post" enctype="multipart/form-data">
+  <input type="hidden" name="urlformcontacus" id="urlformcontacus"  value="<?php echo $currentUrl; ?>">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6">
+          
+            <input type="text" name="formtype" id="formtype" value=2; style="display:none;" required>
+          
+            <span>¿Dónde prefieres trabajar?</span>
+
+            <input name="place" id="place" title="<?php echo __('place') ?>" value="Desde casa" class="input-text hide" type="text" />
+            <select name="place" id="place_mirror">
+            <option value="Desde casa<">Desde casa</option>
+                <option value="En oficina con un equipo de desarrollo">En oficina con un equipo de desarrollo</option>
+                <option value="Desde un coworking con personas de diferentes áreas">Desde un coworking con personas de diferentes áreas</option>
+            </select>
+
+            <span>¿Qué tipo de horario prefieres?</span>
+
+            <input name="time" id="time" title="<?php echo __('time') ?>" value="Medio tiempo" class="input-text hide" type="text" />
+            <select name="time" id="time_mirror">
+            <option value="Medio tiempo">Medio tiempo</option>
+                <option value="TIempo completo">Tiempo completo</option>
+                <option value="Nocturno">Nocturno</option>
+                <option value="Flexible">Flexible</option>
+
+            </select>
+
+            <span>¿Te gustaría tener un trabajo que te permita viajar dentro y fuera del país?</span>
+
+            <input name="travel" id="travel" title="<?php echo __('travel') ?>" value="Si" class="input-text hide" type="text" />
+            <select name="travel" id="travel_mirror">
+            <option value="Si">Si</option>
+                <option value="No">No</option>
+            </select>
+
+            <span>¿Estarías dispuesto a cambiar de ciudad de residencia por tu trabajo?</span>
+
+            <input name="move" id="move" title="<?php echo __('move') ?>" value="Si" class="input-text hide" type="text" />
+            <select name="move" id="move_mirror">
+            
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+                <option value="Sólo por un tiempo determinado">Sólo por un tiempo determinado</option>
+
+            </select>
+
+
+            <label><input class="checkbox-160" type="checkbox" name="Medicina prepagada">Medicina prepagada</label><br />
+            <label><input class="checkbox-160" type="checkbox" name="Cursos de actualización en tecnología">Cursos de actualización en tecnología</label><br />
+            <label><input class="checkbox-160" type="checkbox" name="Cursos de inglés">Cursos de inglés</label><br />
+            <label><input class="checkbox-160" type="checkbox" name="Asistencia a convenciones de tecnología">Asistencia a convenciones de tecnología</label><br />
+            <label><input class="checkbox-160" type="checkbox" name="Descuentos en locales comerciales">Descuentos en locales comerciales</label><br />
+            <label><input class="checkbox-160" type="checkbox" name="Planes de financiamiento (vivienda y/o postgrados)">Planes de financiamiento (vivienda y/o postgrados)</label><br />
+            <label><input class="checkbox-160" type="checkbox" name="Posibilidades de crecimiento aseguradas">Posibilidades de crecimiento aseguradas</label><br />
+            <label><input class="checkbox-160" type="checkbox" name="Bonos por cumplimiento de objetivos">Bonos por cumplimiento de objetivos</label><br />
+            <label><input class="checkbox-160" type="checkbox" name="Otros: especifique uno">Otros: especifique uno</label><br />
+            
+            <textarea id="years" name="years" rows="4" cols="50"></textarea>
+
+            <div class="button-160-container">
+                <button class="button-160" type="submit"  value="Submit">Enviar</button>
+            </div>
+            
+        </div>
+       
+      </div>
+    </div>
+    <br>
+  </form>
+</div>
+
+<script>
+require(['jquery'], function($){
+
+  $(document).ready(function () {
+      $('#place_mirror').change(function () {
+          $('#place').val($(this).val());
+      });
+
+      $('#time_mirror').change(function () {
+          $('#time').val($(this).val());
+      });
+
+      $('#travel_mirror').change(function () {
+          $('#travel').val($(this).val());
+      });
+
+      $('#move_mirror').change(function () {
+          $('#move').val($(this).val());
+      });
+  });
+
+});
+</script>
